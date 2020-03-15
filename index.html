@@ -1,1128 +1,868 @@
-<!DOCTYPE HTML>
-<html lang="en">
+﻿<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-<!-- Mirrored from chulan.kwst.net/bg/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Nov 2018 17:35:47 GMT -->
 <head>
-<!--=============== basic  ===============-->
 
-	<meta charset="UTF-8">
-	<title>Aravinth - Personal Portfolio & Resume</title>
-	<meta name="description" content="Your website description here">
-	<meta name="keywords" content="your, website, keywords, here">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	
-<!--=============== css  ===============-->	
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Aravinth - Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-	<link type="text/css" rel="stylesheet" href="css/animate.css" >
-	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/magnific-popup.css" media="all">
-	<link rel="stylesheet" href="css/superslides.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	<!-- By Aravinth-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- panel css -->
-	<link rel="stylesheet" href="css/panel.css" type="text/css" media="screen">
-	
-<!--=============== colors  ===============-->	
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-	<link rel="alternate stylesheet" type="text/css" href="css/blue-style.css" title="blue" media="screen" />
-	<link rel="alternate stylesheet" type="text/css" href="css/green-style.css" title="green" media="screen" />
-	<link rel="alternate stylesheet" type="text/css" href="css/yellow-style.css" title="yellow" media="screen" />
-	<link rel="alternate stylesheet" type="text/css" href="css/orange-style.css" title="red" media="screen" />
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-<!--=============== fonts  ===============-->
-
-	<link href='http://fonts.googleapis.com/css?family=Istok+Web|Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-	
-<!--=============== google map ===============-->
-
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	
-<!--=============== favicons ===============-->
-
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<!--=============== ie styles  ===============-->
-
-	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
-
-<script> location.hash = (location.hash) ? location.hash : " "; </script>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/New Header2.ico" type="image/x-icon">
+    <link rel="icon" href="images/New Header2.ico" type="image/x-icon">
 
 </head>
 
-<body onLoad="initialize()">
+<body id="top">
 
-<!--=============== main ===============-->
-<div id="main">
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-	<!--=============== intro ===============-->
-	
-	<div id="intro">
-	
-	<!--=============== navigation ===============-->	
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logonew.png" alt="Homepage"></a>
+        </div>
 
-		<div class="nav-holder">
-				
-			<div class="nav-button transition">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-					
-			<div class="nav-border fade"></div>
-			<div class="link-holder fade">
-				<ul>
-					<li class="cur"><a href="#about" class="scroll-link transition">About</a></li>
-					<li><a href="#resume" class="scroll-link transition">Resume</a></li>
-					<li><a href="#work" class="scroll-link transition">Portfolio</a></li>
-					<li><a href="#services" class="scroll-link transition">Services</a></li>
-					<li><a href="#contacts" class="scroll-link transition">Contact</a></li>
-					<!-- <li><a href="blog.html" class="transition">Blog</a></li> -->
-					
-				</ul>
-			</div>
-			
-		</div><!--=============== navigation end ===============-->
-				
-		<!--=============== text-ticker-holder ===============-->	
-			
-		<div class="text-ticker-holder">
-		
-			<div id="slides">
-			
-				<ul class="slides-container">
-						
-					<!-- Slide 1 -->
-						
-					<li>	
-						<div style="background-image: url('images/bg/Kalam Sir.jpg');" class="slides-fullscreen-img"></div>
-					</li>
-							
-					<!-- Slide 2 -->
-							
-					<li>
-						<div style="background-image: url('images/bg/Sundar Pichai.jpg');" class="slides-fullscreen-img"></div>
-					</li>
-			
-					<!-- Slide 3 -->
-							
-					<li>	
-						<div style="background-image: url('images/bg/Sachin.jpg');" class="slides-fullscreen-img"></div>
-					</li>
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
 
-					<!-- Slide 4 -->
-							
-					<li>	
-						<div style="background-image: url('images/bg/Rajaraja Cholan.JPG');" class="slides-fullscreen-img"></div>
-					</li>
+                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+            </ul>
+        </nav>
 
-					<!-- Slide 5 -->
-							
-					<li>	
-						<div style="background-image: url('images/bg/Bharathiyar.jpg');" class="slides-fullscreen-img"></div>
-					</li>
-						
-				</ul>
-							
-			</div><!-- Slider end -->		
-			<div class="overlay"></div>
-			<div class="container">
-				
-				<div class="anim-text-holder">
-				
-					<h1 class="animtext">Hi i am Aravinth </h1>
-					<h3 class="animtext fade">Automation Tester & Front-End Web Developer from India</h3>
-					
-					<div class="start-holder fade">
-					
-						<div class="start-decor transition"></div>
-						
-						<a href="#about" class="scroll-link start"><i class="fa fa-angle-down"></i></a>
-					
-					</div>
-					
-				</div>
-			
-			</div>
-			
-		</div>	<!--=============== text-ticker-holder end===============-->			
-			
-	</div><!--=============== intro end ===============-->	
-			
-	<!--=============== wrapper ===============-->
-		
-	<div id="wrapper">
-	
-		<!--=============== left-sidebar ===============-->
-		
-		<div class="left-sidebar">
-			<a href="#intro" class="scroll-link logo"><img src="images/logo_Me.png" alt=""></a>
-			<div class="desktop-screen-navigation" id="nav"> 
-					<ul>
-						<li class="current transition"><a href="#about" class="scroll-link transition">About</a></li>
-						<li class="transition"><a href="#resume" class="scroll-link transition">Resume</a></li>
-						<li class="transition"><a href="#work" class="scroll-link transition">Portfolio</a></li>
-						<li class="transition"><a href="#services" class="scroll-link transition">Services</a></li>
-						<li class="transition"><a href="#contacts" class="scroll-link transition">Contact</a></li>
-						<!-- <li class="transition"><a href="blog.html" class="transition">Blog</a></li> -->
-					</ul>
-			</div>
-			<a class="nav-top scroll-link" href="#intro"><i class="fa fa-angle-up fa-2x"></i><span class="transition2"></span></a>
-		</div><!--=============== left-sidebar end ===============-->
-		
-		<!--=============== content-holder ===============-->
-		
-		<div class="content-holder">
-		
-			<!--=============== section about ===============-->
-				
-			<div id="about" class="sections">
-			
-				<div class="container animaper anim">
-				
-					<h2>about</h2>
-					<h4 class="margin">A small introduction about my self</h4>
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
 
-					
-					<div class="grid-half right">
-					
-						<div class="photo-holder">
-							<img src="images/Aravinth photo.JPEG" alt="" class="respimg">
-						</div>
-					
-					</div>
-									
-					<div class="grid-half right">
-					
-						<h3>Aravinth Raj</h3>
-						<h3 class="margin">AUTOMATION TESTER & FRONT-END WEB DEVELOPER FROM INDIA</h3>
-						<p>Energetic software engineer with 5+ years experience developing robust code for high-volume businesses. Increased code-efficiency by finding more reusable dependencies. Boosted customer retention by 25%. An enthusiastic team player and deep creative thinker.</p>
-						<p>Team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus. Has developed several tools using VBScript, Java using AWT/SWT, freelance projects on Web Page Designing.</p>
-						
-						<div class="clear"></div>
-						<a href="#work" class="button scroll-link transition">Checkout My Work</a>
-						</div>
-					
-					<div class="clear"></div>
-					
-					<!--skills-->
-					
-					<div class="piechart-holder">
-								
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="95">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>Selenium Webdriver</h4>
-							<p>Selenium is a portable software-testing framework for web applications.</p>				
-						
-						</div>
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="95">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>Java</h4>
-							<p>Java is a general-purpose computer-programming language that is concurrent, class-based & object-oriented.</p>				
-						
-						</div>
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="95">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>Page Factory Model Framework</h4>
-							<p>Page Object Model is an Object Repository design pattern in Selenium WebDriver.The PageFactory Class in Selenium is an extension to the Page Object design pattern.</p>				
-						
-						</div>	
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="95">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>Other Hybrid Frameworks</h4>
-							<p>Hybrid Test framework is a concept where we use the advantage of both Keyword and Data driven framework.</p>				
-						
-						</div>
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="90">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>Cucumber</h4>
-							<p>Cucumber is a testing framework which supports Behavior Driven Development (BDD). It lets us define application behavior in plain meaningful English text using a simple grammar defined by a language called Gherkin.</p>				
-						
-						</div>	
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="90">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>Maven</h4>
-							<p>Maven is a build automation tool used primarily for Java projects. Maven addresses two aspects of building software: first, it describes how software is built, and second, it describes its dependencies.</p>				
-						
-						</div>	
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="90">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>AWT/SWT</h4>
-							<p>The Standard Widget Toolkit (SWT) is a graphical widget toolkit for use with the Java platform. It is an alternative to the Abstract Window Toolkit (AWT) and Swing Java graphical user interface (GUI) toolkits.</p>				
-						
-						</div>	
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="80">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>UFT</h4>
-							<p>UFT is an automated functional Testing tool that helps testers to execute automated tests in order to identify any errors, defects or gaps in contrary to the expected results of the application under test.</p>				
-						
-						</div>	
-						<div class="piechart grid-2">
-							 <span class="chart skilBg" data-percent="90">
-								<span class="percent"></span>
-							</span>
-							
-							<h4>VBScript</h4>
-							<p>VBScript is an Active Scripting language developed by Microsoft that is modelled on Visual Basic. It allows Microsoft Windows system administrators to generate powerful tools for managing computers with error handling, subroutines, and other advanced programming constructs.</p>				
-						
-						</div>					
-					
-				</div>
-					
-			</div>
-				
-			 <div class="show-skills-holder">
-				<span class="decor-fix"></span>
-				<div class="show-skills"><i class="fa fa-angle-up fa-2x"></i><span>Show Skills</span></div>
-			</div> 
-				
-		</div><!--=============== section about end ===============-->
-			
-			
-		<!--=============== section facts ===============-->
-		
-		<div id="facts"  class="sections">
-		<div class="parallax-facts"></div>
-			<div class="overlay"></div>
-			
-			<div class="content">
-			
-				<div class="container">
-					<h4 class="margin">Personal Traits</h4>
-					<h2 class="color-white">FUN FACTS</h2>
-	
-					<ul>
-					
-						<!-- fact 1-->
-						
-						<li class="transition scale-small animaper"> 
-							<div class="conter-decor">
-								<span class="rotade rot-top-left"></span>
-								<span class="rotade rot-top-right"></span>
-								<span class="rotade rot-bottom-left"></span>
-								<span class="rotade rot-bottom-right"></span> 
-							</div>
-							<div class="milestone-counter">
-								
-								<div class="stats animaper">
-									<div class="num" data-content="8" data-num="8">0</div>
-								</div>
-									
-							</div>
-							
-							<h6><span></span>Awards Received</h6>	
-							 
-						</li>
-						
-						 <!-- fact 2--> 
-						  
-						<li class="transition scale-small animaper">
-							<div class="conter-decor">
-								<span class="rotade rot-top-left"></span>
-								<span class="rotade rot-top-right"></span>
-								<span class="rotade rot-bottom-left"></span>
-								<span class="rotade rot-bottom-right"></span> 
-							</div>
-							<div class="milestone-counter">
-				
-								<div class="stats animaper">
-									<div class="num" data-content="23" data-num="23">0</div>
-								</div>
-									
-							</div>
-								 
-							<h6><span></span>Projects Completed</h6>
-							 
-						</li>
-						
-						 <!-- fact 3-->  
-						 
-						<li class="transition scale-small animaper"> 
-						
-							<div class="conter-decor">
-								<span class="rotade rot-top-left"></span>
-								<span class="rotade rot-top-right"></span>
-								<span class="rotade rot-bottom-left"></span>
-								<span class="rotade rot-bottom-right"></span> 
-							</div>
-							<div class="milestone-counter">
-				
-								<div class="stats animaper">
-									<div class="num" data-content="7" data-num="7"></div>
-								</div>
-							</div>
-								 
-							<h6><span></span>Freelance Projects</h6>
-								
-						</li>
-						
-					</ul> 
-																			   
-				</div>
-				
-			</div>	
-				
-		</div> <!--=============== section facts end ===============-->
-		
-	<!--=============== section resume ===============-->
-		
-		<div id="resume"  class="sections">	
-			<div class="background-color">	
-				<div class="content">
-					<div class="container animaper anim">
-					
-						<h4 class="margin color-white">WORK EXPERIENCE</h4>
-						<h2 class="color-white">resume</h2>
-						<div class="content-separator"><i class="fa fa-briefcase"></i><span></span></div>
-		
-						<div class="grid-full">
-							<div class="resume-line"></div>
-						
-						
-							 <!-- 1 item-->
-							 
-							<div class="grid-full place-holder">
-								<div class="grid-1">
-								
-									<div class="resume-date">
-										<h4>October 2013 -<br>October 2014</h4>
-										
-									</div>
-								
-								</div>
-								
-								<div class="grid-5 right">
-								
-									<div class="resume-info">
-									
-										<h3>Test Trainee</h3>
-										<h4>Cognizant Technology Solutions, Coimbatore</h4>
-										<p>As a Test Trainee, I have involved in implementing Testing Methodologies, had a chance to work with some of the Health Care based applications namely FACETS, EDI 834, CDWF, PEGA. Worked with Test Management tools like HP ALM, Handled database like SQL and API testing tool like Soap UI.</p>
-		
-									</div>
-								
-								</div>
-								
-							</div>
-								
-							 <!-- 2 item-->
-							 
-							<div class="grid-full place-holder">
-							
-								<div class="grid-1">
-								
-									<div class="resume-date">
-										<h4>October 2014 -<br>June 2018</h4>
-										
-									</div>
-								
-								</div>
-								
-								<div class="grid-5 right">
-									<div class="resume-info">
-										<h3>Test Professional</h3>
-										<h4>Cognizant Technology Solutions, Coimbatore</h4>
-										<p>Worked as a Functional Tester and Automation Tester.
-As part of Functional Testing good with writing test cases; Thorough hands on experience with all level of testing including Sanity, Usability,Functional, Integration, Regression and User Acceptance Testing. As part of Automation Testing handled projects with Selenium, Java, UFT, Excel Macro. Learned and got hands-on experience in HTML, CSS, HTA, AWT, SWT, JavaFx for Freelance projects.</p>
-		
-									</div>
-								
-								</div>
-								
-							</div>
-													 
-							<!-- 3 item-->
-							 
-							<div class="grid-full place-holder">
-							
-								<div class="grid-1">
-								
-									<div class="resume-date">
-										<h4>June 2018 -<br>December 2018</h4>
-										
-									</div>
-								
-								</div>
-								
-								<div class="grid-5 right">
-								
-									<div class="resume-info">
-									
-										<h3>Programmer Analyst</h3>
-										<h4>Cognizant Technology Solutions, Coimbatore</h4>
-										<p>A Full time Automation Tester expertise in Selenium, Java, UFT, Excel Macro, Cucumber, Maven, HP ALM, SQL.</p>
-		
-									</div>
-								
-								</div>
-								
-							</div>		
-										
-							 <!-- 4 item-->
-							 
-							<div class="grid-full place-holder">
-							
-								<div class="grid-1">
-								
-									<div class="resume-date">
-										<h4>December 2018 -<br>Present</h4>
-										
-									</div>
-								
-								</div>
-								
-								<div class="grid-5 right">
-								
-									<div class="resume-info">
-									
-										<h3>Sr. Test Engineer</h3>
-										<h4>CGI Group Inc., Bengaluru</h4>
-										<p>Full time Automation Architect handling various applications in different domains and tools.</p>
-		
-									</div>
-								
-								</div>
-								
-							</div>	
-							<a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Af98df4b4-0f7a-4788-810b-7a441bb4b9c3" class="button transition" 								target="_blank">Download Resume</a>				
-							
-						</div>
-				
-					</div>	
-					
-				</div>
-		
-			</div>
-		
-		</div><!--=============== section resume end===============-->
+    </header> <!-- end s-header -->
 
 
-		
-		<!--=============== section work ===============-->	
-		
-		<div id="work" class="sections">
-		
-			<div class="background-white">
-			
-				<div class="content">
-				
-					<div class="container animaper anim">
-								
-						<h2>Work </h2>
-						<h4 class="margin">PORTFOLIO</h4>	
-						
-						<!-- portfolio filters -->
-						
-						<div id="options" class="clear">
-	
-						  <ul id="filters" class="option-set" data-option-key="filter">
-						  
-							<li class="filter actcat transition" data-filter="all">All</li>
-							<li class="filter transition" data-filter="category_1">Frameworks </li>
-							<li class="filter transition" data-filter="category_2">Tools</li>
-							<li class="filter transition" data-filter="category_3">Development</li>
-							
-						  </ul>
-						  
-						</div> 
-	
-					<!-- Projects links -->
-				
-						<div id="folio_container">
-						
-							<!-- 1 project ajax page-->
-						
-							<div class="box grid-2   mix category_1 mix_all activefol">
-							
-								<a href="images/folio/thumbs/Page Factory/POM Flow.jpg" class="image-popup">
-								
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/Page Factory/POM Main5.png" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-										<h3>Page Factory Model Framework</h3>
-										<h5>Data Driven, Keyword Driven</h5>
-										<div class="folio-button"><i class="fa fa-rocket"></i></div>
-										</div>
-									</div>
-									
-								</a>
-								
-							</div>
-							
-							<!-- 2 project ajax page-->
-							
-							<div class="box grid-2  mix category_2 mix_all">
-							
-								<a href="images/folio/thumbs/VBS/VBS Tool.gif" class="image-popup">
-								
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/VBS/VBS Main6.png" class="respimg" alt="" title="">								
-										<div class="folio-overlay">
-											<h3>VB Script</h3>
-											<h5>Trackers, Excel handling</h5>
-											<div class="folio-button"><i class="fa fa-picture-o"></i></div>
-										</div>							
-									</div>
-									
-								</a>	
-								
-							</div>
-							
-							<!-- 3 project ajax page-->	
-						
-							<div class="box grid-2   mix category_3 mix_all">
-							
-								<a href="images/folio/thumbs/Dev/Dev UI.jpeg" class="image-popup">
-								
-									<div class="folio-img-holder">						
-										<img src="images/folio/thumbs/Dev/Dev Main1.png" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-											<h3>Front End Development</h3>
-											<h5>Using HTML5, CSS3, JS</h5>
-											<div class="folio-button"><i class="fa fa-camera-retro"></i></div>
-										</div>
-									</div>
-									
-								</a>
-								
-							</div>
-							
-							<!-- 4 project youtube  video-->
-							
-							<div class="box  grid-2  mix category_2 mix_all">
-							
-								<a href="images/folio/thumbs/SWT/SWT Design.png" class="image-popup">
-								
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/SWT/SWT Main2.png" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-											<h3>AWT/SWT</h3>
-											<h5>Tool compressed in a runnable jar file</h5>
-											<div class="folio-button"><i class="fa fa-rocket"></i></div>
-										</div>
-									</div>
-									
-								</a>
-								
-							</div>
-							
-							<!-- 5 project vimeo video-->	
-						
-							<div class="box grid-2  mix category_3 mix_all">
-							
-								<a href="images/folio/thumbs/Django/Django cycle.png" class="image-popup">
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/Django/Django Main3.png" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-											<h3>Django</h3>
-											<h5>Web Server with Python</h5>
-											<div class="folio-button"><i class="fa fa-camera-retro"></i></div>
-										</div>
-									</div>
-									
-								</a>
-								
-							</div>
-							
-							<!-- 6 project single image-->
-							
-							<div class="box grid-2  mix category_1 mix_all">
-							
-								<a href="images/folio/thumbs/BDD/Cucu Report.png" class="image-popup">
-								
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/BDD/Cucu Main2.png" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-											<h3>Behaviour Driven Framework</h3>
-											<h5>Using Cucumber and Maven</h5>
-											<div class="folio-button"><i class="fa fa-camera-retro"></i></div>
-										</div>
-									</div>
-									
-								</a>
-									
-							</div>
-							
-							<!-- 7 project gallery-->	
-						
-							<div class="box grid-2  mix category_2 mix_all">
-							
-								 <a href="images/folio/thumbs/JavaFx/JavaFx Scene.png" class="image-popup">
-									 <div class="folio-img-holder">
-										<img src="images/folio/thumbs/JavaFx/JavaFx Main3.png" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-											<h3>JavaFx</h3>
-											<h5>Interactive GUI based</h5>
-											<div class="folio-button"><i class="fa fa-picture-o"></i></div>
-										</div>
-									</div>
-									
-								</a>
-									
-							</div>
-							
-							<!-- 8 project gallery-->
-							
-							<div class="box grid-2  mix category_3 mix_all">
-							
-								<a href="images/folio/thumbs/Git/Git Flow.png" class="image-popup">
-								
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/Git/Git Main.jpg" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-											<h3>Git Hub</h3>
-											<h5>Web Hosting Services & Central Repository</h5>
-											<div class="folio-button"><i class="fa fa-rocket"></i></div>
-										</div>
-									</div>
-									
-								</a>
-									
-							</div>
-							
-							<!-- 9 project gallery-->
-						
-							<div class="box grid-2   mix category_1 mix_all">
-							
-								<a href="images/folio/thumbs/Python Framework/Python3.png" class="image-popup">
-								
-									<div class="folio-img-holder">
-										<img src="images/folio/thumbs/Python Framework/Python Selenium.png" class="respimg" alt="" title="">
-										<div class="folio-overlay">
-											<h3>Python Framework</h3>
-											<h5>Data Driven, Keyword Driven</h5>
-											<div class="folio-button"><i class="fa fa-picture-o"></i></div>
-										</div>
-									</div>
-									
-								</a>
-								
-							</div> 
-											
-						</div>
-						
-					</div>	
-					
-				</div>
-				
-			</div>
-			
-			<div class="workshadow"></div>
-			
-		</div>	<!--=============== section work  end===============-->	
-	
-		<div class="clear"></div>
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/AravinthRaj.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
-		<!--=============== section services===============-->	
-		
-		<div id="services" class="sections">
-		
-			<div class="content">
-			
-				<div class="container animaper anim">
-				
-					<h4 class="margin">What i do </h4>	
-					<h2>Services</h2>
-					<div class="content-separator"><i class="fa fa-cogs"></i><span></span></div>
-		
-					<div id="services-carusel" class="owl-carousel">
-							
-						<!-- 1 item -->
-								
-						<div class="item">	
-						
-							<div class="services-box">
-							
-								<div class="icon-holder">
-									<i class="fa fa-code"></i>
-								</div>
-								
-								<div class="services-box-info">
-								
-									<span class="services-decor"></span>
-									<h4>Frameworks</h4>
-									<p>
-									Built Frameworks which simplifies and enhances the use of the leading open source tools like Selenium.													</p>
-									<h5>WHAT I OFFER</h5>
-									<ul>
-										<li>Simplified User Interface</li>
-										<li>Cross Platform Support</li>
-										<li>Dashboard & Reports</li>
-										<li>Rest API Support</li>
-									</ul>
-									<div class="clear"></div>
-									<div class="price">Java | Python</div>
-									
-								</div>
-								
-							</div>	
-							
-						</div>
-								
-						<!-- 2 item -->
-								
-						<div class="item">	
-						
-							<div class="services-box">
-							
-								<div class="icon-holder">
-									<i class="fa fa-cogs"></i>
-								</div>
-								
-								<div class="services-box-info">
-								
-									<span class="services-decor"></span>
-									<h4>Tools</h4>
-									<p>
-									To be simplified and to save a ton of time on your day-to-day activities, automation tools can break all the limitations.
-									</p>
-									<h5>WHAT I OFFER</h5>
-									<ul>
-										<li>Process/Downtime Trackers</li>
-										<li>AWT/SWT Tools</li>
-										<li>JavaFx Tools</li>
-										<li>Excel Macros</li>
-									</ul>
-									<div class="clear"></div>
-									<div class="price">VB Script | Java</div>
-									
-								</div>
-								
-							</div>
-								
-						</div>
-								
-						<!-- 3 item -->
-								
-						<div class="item">	
-						
-							<div class="services-box">
-							
-								<div class="icon-holder">
-									<i class="fa fa-terminal"></i>
-								</div>
-								
-								<div class="services-box-info">
-								
-									<span class="services-decor"></span>
-									<h4>Development</h4>
-									<p>
-									A strong influence on people’s first impressions of the site is Look and Feel.
-									</p>
-									<h5>WHAT I OFFER</h5>
-									<ul>
-										<li>Visually appealing and Convenient Interface</li>
-										<li>Better Performance</li>
-										<li>Github Hosting</li>
-										<li>Cross Platforms</li>
-									</ul>
-									<div class="clear"></div>
-									<div class="price">HTML5 & CSS3</div>
-									
-								</div>
-								
-							</div>
-								
-						</div>
-								
-						<!-- 4 item -->
-				
-						<!-- <div class="item">	
-						
-							<div class="services-box">
-							
-								<div class="icon-holder">
-									<i class="fa fa-camera"></i>
-								</div>
-								
-								<div class="services-box-info">
-								
-									<span class="services-decor"></span>
-									<h4>Photo</h4>
-									<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-									<h5>WHAT i OFFER</h5>
-									<ul>
-										<li>Concept</li>
-										<li>Design</li>
-										<li>3D Modeling</li>
-										<li>Research</li>
-									</ul>
-									<div class="clear"></div>
-									<div class="price">10$-140$</div>
-									
-								</div>
-								
-							</div>	
-							
-						</div> -->
-			
-					</div>		
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+    `
+        <div class="home-content">
 
-				</div>	
-				
-			</div>
-		
-		</div>	<!--=============== section services  end===============-->	
-		
-		<!--=============== section order ===============-->
-			
-		<div id="order" class="sections">
-		
-			<div class="content">
-				<a href="#contact_form" class="button transition scroll-link">Get in touch</a>
-			</div>
-			
-			<div class="ordershadow"></div>
-		
-		</div>	<!--=============== section order end ===============-->
+            <div class="row home-content__main">
 
-		<div class="clear"></div>
-		
-		<!--=============== section testimonials ===============-->
-		
-		<div id="testimonials" class="sections">
-			<div class="parallax-testimonials"></div>
-			<div class="overlay"></div>
-			<div class="content">
-				<div class="container">
-					
-					<h4 class="margin">Functional Testing to Automation Testing; Now leaping towards Font End Web Development</h4>
-					<h2 class="color-white">Transition</h2>
-					<div class="content-separator"><i class="fa fa-fast-forward"></i><span></span></div>
-					<div id="testimonials-slider" class="owl-carousel">
-								
-						<!-- fist-slide -->
-									
-							<div class="item">
-								<div class="user-photo"><img src="images/Towards Development/git-hub.png" alt="" class="respimg"></div>
-								<p class="transition"> " Using Github as a <U>Central Repository</U> to maintain my projects, hosting a version of my project, cloning & 								forking Github repository " </p>
-								<div class="client-name">Git Hub<span class="client-line"><span class="circle"></span></span></div>
-					
-							</div>
-									
-						<!-- second-slide -->
-									
-							<div class="item">
-								<div class="user-photo"><img src="images/Towards Development/python-logo3.jpg" alt="" class="respimg"></div>	
-								<p class="transition">" Working on Python GUI Frameworks like Tkinter and PyGUI "</p>
-								<div class="client-name">Python<span class="client-line"><span class="circle"></span></span></div>
-					
-							</div>
-									
-						<!-- third-slide -->
-												
-							<div class="item">
-								<div class="user-photo"><img src="images/Towards Development/django2.png" alt="" class="respimg"></div>	
-								<p class="transition">" Django framework to build web server and to develop full fledged web sites"</p>
-								<div class="client-name">Django<span class="client-line"><span class="circle"></span></span></div>
-						
-							</div>
-							
-					</div>
-					
-				</div>
-				
-			</div>
-			
-			<div class="testimonials-shadow"></div>
-		
-		</div>
+                <h3>Hello There.</h3>
 
-		 <!--=============== section map ===============-->
-		
-		 
-		<!--=============== section map end===============--> 
+                <h1>
 
-		<div class="clear">
-		<p><br><br><br>
-		</p>
-		</div>
-		
-		<!--=============== section contacts ===============-->
-		
-		<div id="contacts" class="sections">
-				
-				<div class="content">
-		
-					<div class="container animaper anim">
-					
-						<h4 class="margin">Get in touch</h4>
-						<h2 class="color-white">Contact</h2>
-						<div class="grid-2">						
-							<div class="contact-details">
-								
-								<h3>Contact Info</h3>
-								<ul>
-									<!--<li><i class="fa fa-mobile "></i><span>(+91) 9952916632</span></li>-->
-									<li><i class="fa fa-envelope-o"></i><span>aravinth.a.ecs@gmail.com</span></li>
-									<li><i class="fa fa-home"></i><span>Coimbatore,<br>Tamil Nadu, India</span></li>
-								</ul>
-				
-							</div>	
-							
-						</div>
-												
-						<div class="grid-4">
-							
-							<div class="contact-form clear">
-							
-							<p>Feel free to reach out to me. I'd love to hear from you.</p>
-								
-								<fieldset id="contact_form">
-																			
-									<label for="name">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</label>
-									
-									<div class="clear"></div>
-									
-									<label for="message">
-										<textarea name="message"  id="message" placeholder="Message"></textarea>
-									</label>
-												
-									<div class="clear"></div>
-																		
-									<label>
-									<button class="submit_btn transition" id="submit_btn" onclick="myFunction()"><i class="fa fa-envelope-o fa-2x"></i></button>
-									<script>
-									function myFunction() {
-										var username = document.getElementById("name").value;
-										var usermessage = document.getElementById("message").value;
-										if(username!="" & usermessage!=""){
-											alert("On Continuing, this will open your default mailbox");
-											location.href = 'mailto:mailtoarvn@gmail.com?body=' + usermessage + '&subject=Mail is from '+ username;
-										}
-										document.getElementById("name").value = " ";
-										document.getElementById("message").value = " ";
+                    <b> I'm Aravinth. </b><br>
 
-    									}
-									</script>
+                      <font size="4">
+                          | &nbsp; Automation Developer &nbsp; | &nbsp;
+                          | &nbsp; Freelancer &nbsp; |
+                      </font>
 
-									</label>
-										
-									
-									
-								</fieldset>
-									
-							</div>
-							
-						</div>
-			
-					</div>
-				</div>
-		
-			</div><!--=============== contacts end ===============-->
-		
-			<!--=============== section footer ===============-->	
-		
-			<div id="footer" class="sections ws">
-				<div class="content">
-					<div class="container">
-					
-						<a class="to-top scroll-link" href="#intro"><i class="fa fa-angle-up transition"></i></a>
-						
-						<div class="clear"></div>
-						
-						<div class="social-list">
-							
-							<ul>
-								<li><a href="#"  target="_blank" class="transition"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"  target="_blank" class="transition"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"  target="_blank" class="transition"><i class="fa fa-linkedin"></i></a></li>	
-							</ul>
-										
-						</div>	
-						
-						<p>Aravinth ©2019  All rights reserved.</p>
-					
-					</div>
-					
-				</div>
-			
-			</div><!--=============== section footer end ===============-->	
-		
-		</div><!--=============== content-holder end ===============-->	
-		
-	</div><!--=============== wrapper end ===============-->	
-<!--=============== Styleswitch Panel Only in Demo ===============-->
+                </h1>
 
-<!-- <div class="show-panel"><i class="fa fa-cogs"></i></div>
-<div class="panel">
-	<h3>Options</h3>
-	<div class="panel-container">
-			<div class="options">
-				<h5>Switching color</h5>
-				<ul class="color-switch">
-					<li class="orange"><a href="#" rel="red" class="styleswitch"></a></li>
-					<li class="blue"><a href="#" rel="blue" class="styleswitch"></a></li>
-					<li class="green"><a href="#" rel="green" class="styleswitch"></a></li>
-					<li class="yellow"><a href="#" rel="yellow" class="styleswitch"></a></li>
-				</ul>
-			<div class="layout-holder">
-			<h5>Layout type</h5>
-			<a href="#" class="layout acttype">Static</a>	
-			<a href="index.html" class="layout">Slider</a>	
-			<a href="http://chulan.kwst.net/video/index.html" class="layout">Video</a>	
-			</div>		
-			</div>
-	</div>
+                <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Latest Projects
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Me
+                    </a>
+                </div>
 
-</div><!--panel end -->	
--->
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
 
-	
-</div><!--=============== main end ===============-->	
+            </div>
 
- 
-<!--=============== javascript ===============-->
+        </div> <!-- end home-content -->
 
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jpreloader.min.js"></script>
-	<script type="text/javascript" src="js/mixitup.js"></script>
-	<script type="text/javascript" src="js/appear.js"></script>
-	<script type="text/javascript" src="js/jquery.nav.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/superslides.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.lettering.js"></script>
-	<script type="text/javascript" src="js/jquery.textillate.js"></script>
-	<script type="text/javascript" src="js/jquery.fittext.js"></script>
-	<script type="text/javascript" src="js/jquery.easypiechart.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-		<!--Styleswitch-->
-	<script src="js/styleswitch.js" type="text/javascript"></script>	
+        <ul class="home-social">
+            <li>
+                <a href="https://www.linkedin.com/in/aravinth-a-3098b9110/" target="_blank"><i class="im im-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="im im-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+        
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>About</h3>
+                <h1>Let me introduce myself.</h1>
+                <p class="lead">
+                    Objective Detail-oriented professional with over 6 years of experience in Quality Assurance.<br>
+                    Poses solid automation background and experience in developing various automation frameworks that usually optimise resource utilization and improve overall product quality.
+                </p>
+            </div>
+        </div>
+
+        <div class="row about-content">
+
+            <div class="col-six tab-full left">
+                <h3>Summary.</h3>
+
+                <p>
+                    Skilled technician in developing test automation frameworks using top class approaches available in the market.
+                    Acheived huge <b>Return On Investments (ROI)</b> for the clients in replacing Cost-Effective tools with Open source and Freewares.
+                    Developed effective automated test script designs with objectives of maximizing the reusability and their maintainability as per the Industry standards.
+                </p>
+
+                <p>
+                    Works closely with multiple US and UK clients. Acquired recognitions and Framework approvals from multiple clients on/after the client demo.
+                </p>
+
+                <p>
+                    Conducted in-house Selenium, Java, Automation Frameworks, Agile, Future of Automation training classes.
+                    Mentored and provided guidance for QA automation teams.
+                    Consistent with the research on industry trends and enhancements to meet new technology and business demands.
+                    On a goal to impose Artificial Intelligence via Test Automation.
+                </p>
+                <p>
+                    <u><b><font color="#b5422b">HyRoid</font></b></u>, is one such Test Automation Framework which will adopt Artificial Intelligence (AI).
+                    HyRoid will be licensed and copyrighted to Aravinth.
+
+                </p>
+            </div>
+
+            <div class="col-six tab-full right">
+                <h3>I've Got Some skills.</h3>
+
+                <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent95"><span>95%</span></div>
+                    <strong>| Selenium | | UFT | | Katalon Studio |</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent100"><span>100%</span></div>
+                    <strong>| Cucumber BDD | | And Other Hybrid Frameworks|</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>| Agile | | Waterfall | </strong>
+                    </li>
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>| Maven | | GIT | | Artifactory | | Docker |</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>| ALM QC | | Rally | | Jira |</strong>
+                    </li>   
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>| AWT/SWT | | JavaFX | | Scence Builder | | VBA |</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>| Functional & Non-Functional Testing | </strong>
+                    </li>
+		            <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>| Java | | VBScript | | C# | | Python |</strong>
+                    </li>   
+                </ul>
+            </div>
+
+        </div> <!-- end about-content -->
+
+        <div class="row about-content about-content--buttons">
+
+            <div class="col-six tab-full left">
+                <a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A24b75484-1716-4372-9422-4860bcebb71a" target="_blank" class="btn btn--primary full-width">Download My CV</a>
+            </div>
+            <div class="col-six tab-full right">
+                <a href="#0" class="btn full-width">Hire Me Now</a>
+            </div>
+
+        </div> <!-- end about-content buttons -->
+
+        <div class="row about-content about-content--timeline">
+
+            <div class="col-full text-center">
+                <h3>My Work Experience.</h3>
+            </div>
+
+            <div class="col-six tab-full left">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">December 2018 - Present</p>
+                            <h3>Senior Automation Engineer</h3>
+                            <h5>CGI GROUP INC., BENGALURU</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>
+                                Full time Automation Developer handling various applications in different domains and tools.
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">June 2018 - December 2018</p>
+                            <h3>Programmer Analyst</h3>
+                            <h5>COGNIZANT TECHNOLOGY SOLUTIONS, COIMBATORE</h5>
+                        </div>
+                        <div class="timeline__desc">	
+                            <p>
+                                A Full time Automation Tester expertise in Selenium, Java, UFT, Excel Macro, Cucumber, Maven, HP ALM, SQL.
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+            </div> <!-- end left -->
+
+            <div class="col-six tab-full right">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">October 2014 - June 2018</p>
+                            <h3>Test Professional</h3>
+                            <h5>COGNIZANT TECHNOLOGY SOLUTIONS, COIMBATORE</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>
+                                Worked as a Functional Tester and Automation Tester. As part of Functional Testing good with writing test cases; Thorough hands on experience with all level of testing including Sanity, Usability,Functional, Integration, Regression and User Acceptance Testing. As part of Automation Testing handled projects with Selenium, Java, UFT, Excel Macro. Learned and got hands-on experience in HTML, CSS, HTA, AWT, SWT, JavaFx for Freelance projects.
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">October 2013 - October 2014</p>
+                            <h3>Test Trainee</h3>
+                            <h5>COGNIZANT TECHNOLOGY SOLUTIONS, COIMBATORE</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>
+                                As a Test Trainee, I have involved in implementing Testing Methodologies, had a chance to work with some of the Health Care based applications namely FACETS, EDI 834, CDWF, PEGA. Worked with Test Management tools like HP ALM, Handled database like SQL and API testing tool like Soap UI.
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+            </div> <!-- end right -->
+
+        </div> <!-- end about-content timeline -->
+
+    </section> <!-- end about -->
+    
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3>Portfolio</h3>
+                <h1>See My Latest Projects.</h1>
+                
+                <p class="lead">Project Highlights</p>
+            </div>
+        </div>
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-HyRoid.png" class="thumb-link" title="HyRoid" data-size="1050x700">
+                                <img src="images/portfolio/beetle.jpg"
+                                     srcset="images/portfolio/One.jpeg, images/portfolio/One.jpeg" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                HYROID
+                            </h3>
+                            <p class="item-folio__cat">
+                                NexGen Test Automation Framework
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>A Hybrid Test Automation Framework which supports Continuous Integration and runs on any machine.</p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/Python_Hybrid.png" class="thumb-link" title="Python Hybrid" data-size="1050x700">
+                                <img src="images/portfolio/gallery/Python_Hybrid.png"
+                                     srcset="images/portfolio/Two.jpeg, images/portfolio/Two.jpeg" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                PYTHON HYBRID FRAMEWORK
+                            </h3>
+                            <p class="item-folio__cat">
+                                Test Automation Framework
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>A Hybrid Test Automation Framework embedded with Keyword and Data driven approach.</p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-ETL.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/g-ETL.jpg"
+                                     srcset="images/portfolio/Three.jpeg, images/portfolio/Three.jpeg" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                ETL AUTOMATION TOOL
+                            </h3>
+                            <p class="item-folio__cat">
+                                Automating Informatica applications
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Automating ETL testing by identifying and mitigating data defects.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-Reports.png" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/g-Reports.png"
+                                     srcset="images/portfolio/Four.jpeg, images/portfolio/Four.jpeg" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                HYROID ADVANCED REPORTS
+                            </h3>
+                            <p class="item-folio__cat">
+                                Tailored Reports for NexGen Automation
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Reports with the features including Report Mail, Progress of testing, Browsers involved, Screenshots etc.,</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-DowntimeTracker.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/skaterboy.jpg"
+                                     srcset="images/portfolio/Five.jpeg, images/portfolio/Five.jpeg" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                DOWNTIME TRACKER & REPORTER
+                            </h3>
+                            <p class="item-folio__cat">
+                                A tool with eye-catching User Interface and Reporter
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Reports downtime to all the relevant peers.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-MemberReporting.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/skaterboy.jpg"
+                                     srcset="images/portfolio/Six.jpeg, images/portfolio/Six.jpeg" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                VBA MEMBER REPORTING TOOL
+                            </h3>
+                            <p class="item-folio__cat">
+                                Log In/Log Out/Daily Status Tracker
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Reports the Efforts and Time spent for each billable resource.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+            </div>
+        </div> <!-- end masonry -->
+
+    </section> <!-- end works -->
+
+
+
+    <!-- testimonials
+    ================================================== -->
+    <div class="s-testimonials">
+
+        <div class="overlay"></div>
+
+        <div class="row testimonials-header">
+            <div class="col-full">
+                <h1 class="h02">Tools I Use</h1>
+		<p>List of tools which I use to integrate with the design.</p>
+            </div>
+        </div>
+
+        <div class="row testimonials">
+
+            <div class="col-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <img src="images/Towards Development/Selenium.png" alt="Author image" class="testimonials__avatar">
+                    <p>Selenium is a portable framework for testing web applications. 
+                    It supports some of popular programming languages, including C#, Groovy, Java, Perl, PHP, Python, Ruby and Scala. 
+                    The tests can then run against most modern web browsers. 
+                    Selenium runs on Windows, Linux, and macOS. It is open-source software released under the Apache License 2.0.</p>
+                    <div class="testimonials__author h06">
+                        Selenium
+                        <span>Web Framework</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="images/Towards Development/Cucumber_Selenium.png" alt="Author image" class="testimonials__avatar">
+                    <p>A cucumber is a tool based on Behavior Driven Development (BDD) framework which is used to write acceptance tests for the web application. 
+                    It allows automation of functional validation in easily readable and understandable format (like plain English) to Business Analysts, Developers, Testers, etc.</p>
+                    <div class="testimonials__author h06">
+                        Cucumber
+                        <span>Behaviour Driven Development Framework</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="images/Towards Development/git-hub.png" alt="Author image" class="testimonials__avatar">
+                    <p>
+                        GitHub, Inc. is a US-based global company that provides hosting for software development version control using Git.
+                        It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
+                    </p>
+                    <div class="testimonials__author h06">
+                        Git Hub
+                        <span>Web based hosting service for version control</span>
+                    </div>
+                </div>
+
+		<div class="testimonials__slide">
+                    <img src="images/Towards Development/Nexus.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>
+                    Nexus Repository OSS is an open source repository that supports many artifact formats, including Docker, Java™, and npm. 
+                    With the Nexus tool integration, pipelines in your toolchain can publish and retrieve versioned apps and their dependencies by using central repositories that are accessible from other environments.
+                    </p>
+                    <div class="testimonials__author h06">
+                        Nexus Repository
+                        <span>Repository Management</span>
+                    </div>
+                </div>
+
+		<div class="testimonials__slide">
+                    <img src="images/Towards Development/SceneBuilderLogo.png" alt="Author image" class="testimonials__avatar">
+                    <p>
+                        JavaFX is a software platform for creating and delivering desktop applications, as well as rich Internet applications (RIAs) that can run across a wide variety of devices. 
+                        JavaFX is intended to replace Swing as the standard GUI library for Java SE, but both will be included for the foreseeable future.
+                        JavaFX has support for desktop computers and web browsers on Microsoft Windows, Linux, and macOS.
+                    </p>
+                    <div class="testimonials__author h06">
+                        JavaFx
+                        <span>Scence Builder</span>
+                    </div>
+                </div>
+
+		<div class="testimonials__slide">
+                    <img src="images/Towards Development/UFT.png" alt="Author image" class="testimonials__avatar">
+                    <p>
+                        Micro Focus Unified Functional Testing (UFT) software, formerly known as QuickTest Professional (QTP), provides functional and regression test automation for software applications and environments.
+                        It uses the Visual Basic Scripting Edition (VBScript) scripting language to specify a test procedure, and to manipulate the objects and controls of the application under test.
+                    </p>
+                    <div class="testimonials__author h06">
+                        UFT
+                        <span>Microfocus UFT</span>
+                    </div>
+                </div>
+
+        <div class="testimonials__slide">
+            <img src="images/Towards Development/KatalonStudio.png" alt="Author image" class="testimonials__avatar">
+            <p>
+                Katalon Studio is an automation testing solution developed by Katalon LLC. 
+                The software is built on top of the open-source automation frameworks Selenium, Appium with a specialized IDE interface for web, API, mobile and desktop application testing.
+            </p>
+            <div class="testimonials__author h06">
+                Katalon Studio
+                <span>Test Automation Tool</span>
+            </div>
+        </div>
+
+        <div class="testimonials__slide">
+            <img src="images/Towards Development/Jenkins.png" alt="Author image" class="testimonials__avatar">
+            <p>
+                Jenkins is a free and open source automation server. 
+                Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery. 
+                It is a server-based system that runs in servlet containers such as Apache Tomcat.
+            </p>
+            <div class="testimonials__author h06">
+                Jenkins
+                <span>Continuos Integration and Development</span>
+            </div>
+        </div>
+
+        <div class="testimonials__slide">
+            <img src="images/Towards Development/Docker.png" alt="Author image" class="testimonials__avatar">
+            <p>
+                Docker is a set of platform as a service (PaaS) products that uses OS-level virtualization to deliver software in packages called containers.
+                Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+                All containers are run by a single operating-system kernel and are thus more lightweight than virtual machines.
+            </p>
+            <div class="testimonials__author h06">
+                Docker
+                <span>Container based application</span>
+            </div>
+        </div>
+                
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </div> <!-- end s-testimonials -->
+
+
+
+
+
+    <!-- s-stats
+    ================================================== -->
+    <section id="stats" class="s-stats">
+        <div class="row block-1-4 block-tab-1-2 block-mob-full stats">
+
+            <div class="col-block stats__col ">
+                <div class="stats__count">
+                    12
+                </div>
+                <h4>Awards Received</h4>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    2300
+                </div>
+                <h4>Cups of Coffee</h4>
+            </div>
+            <div class="col-block stats__col stats__col--highlight">
+                <div class="stats__upsign">
+                    <a href="#"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+                <div class="stats__count">
+                    27
+                </div>
+                <h4>Projects Completed</h4>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    7
+                </div>
+                <h4>Freelance Projects</h4> 
+            </div>
+
+        </div>
+    </section> <!-- end s-stats -->
+
+
+    <!-- s-stats
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="overlay"></div>
+
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <h3>Contact</h3>
+                <h1>Say Hello.</h1>
+                
+                <p class="lead">Feel free to reach out to me. I'd love to hear from you.</p>
+            </div>
+        </div>
+
+        <div class="row contact__main">
+            <div class="col-eight tab-full contact__form">
+                <form name="contactForm" id="contactForm" method="post" action="">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div> 
+            
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+                        
+            </div>
+            <div class="col-four tab-full contact__infos">
+                <h4 class="h06">Email</h4>
+                <p>mailtoarvn@gmail.com
+                <!--info@holawebsite.com-->
+                </p>
+
+                <h4 class="h06">Address</h4>
+                <p>
+                    Electronic City,<br>
+                    Bengaluru,<br>
+                    Karnataka - 560100
+                    India.
+                </p>
+            </div>
+
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><img src="images/AravinthLogo.png" alt="Homepage"></a>
+                </div>
+
+                <ul class="footer-social">
+                    <li><a href="https://www.linkedin.com/in/aravinth-a-3098b9110/" target="_blank">
+                        <i class="im im-linkedin" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a></li>
+                    <li>
+                        <a href="#">
+                            <i class="im im-facebook" aria-hidden="true"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="im im-twitter" aria-hidden="true"></i>
+                        <span>Twitter</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="im im-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a></li>
+
+                </ul>
+                    
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Maintained By Aravinth Raj 2020.</span> 
+                    <span>Design by <a href="https://www.styleshout.com">styleshout</a></span>	
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
-<!-- Mirrored from chulan.kwst.net/bg/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Nov 2018 17:38:50 GMT -->
 </html>
