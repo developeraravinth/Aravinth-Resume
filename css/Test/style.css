@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  border: 0;
+}
+
+.one {
+  background-color: khaki;
+  border: 1em black;
+  padding: 5em;
+  position: absolute;
+}
+
+.two {
+  background-color: lavender;
+  border: 1em black;
+  padding: 5em;
+  position: relative;
+  top: 500px;
+}
+
+.three {
+  background-color: lightcoral;
+  border: 1em black;
+  padding: 5em;
+}

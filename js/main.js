@@ -138,7 +138,7 @@
         containerBricks.imagesLoaded(function () {
             containerBricks.masonry({
                 itemSelector: '.masonry__brick',
-                resize: true
+                resize: false
             });
         });
     };
@@ -206,7 +206,7 @@
             arrows: true,
             dots: false,
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             prevArrow: "<div class=\'slick-prev\'><i class=\'im im-arrow-left\' aria-hidden=\'true\'></i></div>",
             nextArrow: "<div class=\'slick-next\'><i class=\'im im-arrow-right\' aria-hidden=\'true\'></i></div>",       
@@ -343,27 +343,38 @@
         
             /* submit via ajax */
             submitHandler: function(form) {
-    
+
                 var sLoader = $('.submit-loader');
-    
+
                 $.ajax({
-    
-                    type: "POST",
-                    url: "inc/sendEmail.php",
-                    data: $(form).serialize(),
+                    
+                    //url: "js/sendEmail.js",
+                    // data: $("form").serialize(), 
+                    //or your custom data either as object {foo: "bar", ...} or foo=bar&...
+                    
+
+                    //data:"jobID=12345",
+
                     beforeSend: function() { 
     
                         sLoader.slideDown("slow");
     
                     },
-                    success: function(msg) {
-    
-                        // Message was sent
-                        if (msg == 'OK') {
+                    
+
+                    success: function() { 
+                        var email = 'mailtoarvn@gmail.com'
+                        var name = document.getElementById('contactName').value
+                        var subject = document.getElementById('contactSubject').value
+                        var message = document.getElementById('contactMessage').value
+
+                        if (email != "" && name != "" && subject != "" && message != "") {
                             sLoader.slideUp("slow"); 
                             $('.message-warning').fadeOut();
                             $('#contactForm').fadeOut();
                             $('.message-success').fadeIn();
+
+                            document.location = "mailto:"+email+"?subject="+subject+"&body="+message;
                         }
                         // There was an error
                         else {
@@ -371,17 +382,65 @@
                             $('.message-warning').html(msg);
                             $('.message-warning').slideDown("slow");
                         }
-    
+                        
+                        
                     },
                     error: function() {
-    
                         sLoader.slideUp("slow"); 
                         $('.message-warning').html("Something went wrong. Please try again.");
                         $('.message-warning').slideDown("slow");
-    
                     }
-    
+
+                    
+
+                    
                 });
+
+
+
+                
+                // var sLoader = $('.submit-loader');
+
+                
+    
+                // $.ajax({
+    
+                //     type: "POST",
+                //     url: "js/sendEmail.js",
+                //     data: $(form).serialize(),
+                //     beforeSend: function() { 
+    
+                //         sLoader.slideDown("slow");
+    
+                //     },
+                //     success: function(msg) {
+
+                //         alert(msg)
+    
+                //         // Message was sent
+                //         if (msg == 'OK') {
+                //             sLoader.slideUp("slow"); 
+                //             $('.message-warning').fadeOut();
+                //             $('#contactForm').fadeOut();
+                //             $('.message-success').fadeIn();
+                //         }
+                //         // There was an error
+                //         else {
+                //             sLoader.slideUp("slow"); 
+                //             $('.message-warning').html(msg);
+                //             $('.message-warning').slideDown("slow");
+                //         }
+    
+                //     },
+                //     error: function() {
+    
+                //         sLoader.slideUp("slow"); 
+                //         $('.message-warning').html("Something went wrong. Please try again.");
+                //         $('.message-warning').slideDown("slow");
+    
+                //     }
+    
+                // });
             }
     
         });
